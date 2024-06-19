@@ -1,5 +1,6 @@
 async function test() {
-    return 'n'
+    return await new Promise(
+       (resolve) =>setTimeout(() => {resolve ('n') }, 2000 ))
 }
 
 
