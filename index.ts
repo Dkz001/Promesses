@@ -5,14 +5,14 @@ const promesse2 = new Promise((resolve, reject) => {
 });
 
 promesse2.then((value) => {
-    console.log(value); // Affiche : "Première promesse résolue"
+    console.log(value); // show : "Première promesse résolue"
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve('Deuxième promesse résolue');
         }, 1000);
     });
 }).then((value) => {
-    console.log(value); // Affiche : "Deuxième promesse résolue"
+    console.log(value); // show : "Deuxième promesse résolue"
 }).catch((error) => {
     console.error(error);
 });
